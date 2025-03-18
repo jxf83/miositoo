@@ -9,26 +9,29 @@
 <body>
   <!-- Barra di ricerca -->
   <header>
-    <input type="text" id="search-bar" placeholder="Cerca prodotto..." />
-    <button onclick="searchProduct()">Cerca</button>
+    <div class="container">
+      <h1>Comparatore Prezzi</h1>
+      <input type="text" id="search-bar" placeholder="Cerca prodotto..." />
+      <button onclick="searchProduct()">Cerca</button>
+    </div>
   </header>
 
   <!-- Risultati ricerca -->
-  <section id="product-list">
-    <div class="product">
+  <section id="product-list" class="container">
+    <div class="product-card">
       <h2>Smartphone XYZ</h2>
-      <p>€299</p>
-      <a href="https://www.amazon.it">Compra su Amazon</a>
+      <p class="price">€299</p>
+      <a class="btn" href="https://www.amazon.it">Compra su Amazon</a>
     </div>
-    <div class="product">
+    <div class="product-card">
       <h2>Smartphone XYZ</h2>
-      <p>€295</p>
-      <a href="https://www.ebay.it">Compra su eBay</a>
+      <p class="price">€295</p>
+      <a class="btn" href="https://www.ebay.it">Compra su eBay</a>
     </div>
   </section>
 
   <!-- Grafico dei prezzi (Semplice) -->
-  <section id="price-chart">
+  <section id="price-chart" class="container">
     <h3>Andamento Prezzi</h3>
     <!-- Qui puoi inserire un grafico dinamico con Chart.js -->
     <canvas id="price-history-chart"></canvas>
