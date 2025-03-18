@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparatore Prezzi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Barra di ricerca -->
+  <header>
+    <input type="text" id="search-bar" placeholder="Cerca prodotto..." />
+    <button onclick="searchProduct()">Cerca</button>
+  </header>
+
+  <!-- Risultati ricerca -->
+  <section id="product-list">
+    <div class="product">
+      <h2>Smartphone XYZ</h2>
+      <p>€299</p>
+      <a href="https://www.amazon.it">Compra su Amazon</a>
+    </div>
+    <div class="product">
+      <h2>Smartphone XYZ</h2>
+      <p>€295</p>
+      <a href="https://www.ebay.it">Compra su eBay</a>
+    </div>
+  </section>
+
+  <!-- Grafico dei prezzi (Semplice) -->
+  <section id="price-chart">
+    <h3>Andamento Prezzi</h3>
+    <!-- Qui puoi inserire un grafico dinamico con Chart.js -->
+    <canvas id="price-history-chart"></canvas>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Comparatore Prezzi</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
